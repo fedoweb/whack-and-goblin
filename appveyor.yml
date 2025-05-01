@@ -5,3 +5,7 @@ environment:
     secure: 2YjVzBsSXLSSFG4rX5qAPqRr2vbfr1EcYFeIwAdV6hZyCVFcoV2PNG3R/BbdeJf7
 build:
   verbosity: minimal
+on_success:
+  - git config --global user.email "appveyor@example.com"
+  - git config --global user.name "Appveyor CI"
+  - npm run deploy

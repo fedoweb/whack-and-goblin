@@ -8,6 +8,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/whack-and-goblin/',
   },
   devServer: {
     static: {
@@ -38,7 +39,7 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/images/[hash][ext][query]'
+          filename: 'assets/images/[name][ext]'
         }
       },
     ],
@@ -64,6 +65,7 @@ module.exports = {
       '@js': path.resolve(__dirname, 'src/js'),
       '@css': path.resolve(__dirname, 'src/css'),
       '@game': path.resolve(__dirname, 'src/game'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
     },
   },
   mode: 'development',
