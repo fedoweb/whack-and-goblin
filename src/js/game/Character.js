@@ -10,7 +10,7 @@ export default class Character {
 
     createCharacter() {
         this.character = document.createElement('img');
-        this.character.src = '/pic/goblin.png';
+        this.character.src = 'pic/goblin.png';
         this.character.classList.add('goblin');
         this.character.alt = 'Goblin character';
         }
