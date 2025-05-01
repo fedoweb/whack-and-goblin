@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+.title {
+    display: flex;      
+    align-items: center;   
+    justify-content: center;
+    color: red;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.board_container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    gap: 2px;
+    margin: 0 auto;
+}
+
+.board_cell {
+    background-color: green;
+    border-radius: 50%; 
+    aspect-ratio: 1 / 1;
+    display: flex;      
+    align-items: center;   
+    justify-content: center;
+}
+
+.goblin {
+    width: 80%;
+    object-fit: contain;
+}

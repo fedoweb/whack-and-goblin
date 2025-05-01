@@ -1,0 +1,44 @@
+{
+  "name": "whack-and-goblin",
+  "version": "1.0.0",
+  "description": "![Демонстрация игры \"Whack and Goblin\"](src/pic/GracefulMiniatureBustard-small.gif)",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedoweb/whack-and-goblin.git"
+  },
+  "author": "fedoweb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedoweb/whack-and-goblin/issues"
+  },
+  "homepage": "https://fedoweb.github.io/whack-and-goblin/",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^29.7.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}
