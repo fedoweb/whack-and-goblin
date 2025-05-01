@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack --mode production",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build && cp public/.nojekyll public/404.html dist/",
+    "deploy": "gh-pages -d dist -r https://$GITHUB_TOKEN@github.com/fedoweb/whack-and-goblin.git",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src",

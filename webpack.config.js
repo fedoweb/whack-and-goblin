@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     publicPath: '/whack-and-goblin/',
+  assetModuleFilename: 'pic/[name][ext]'
   },
   devServer: {
     static: {
@@ -39,7 +40,7 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/images/[name][ext]'
+          filename: 'pic/[name][ext]'
         }
       },
     ],
